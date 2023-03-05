@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+ サイト全体の設定
+-------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  color: #000;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+}
+
+/* Headerエリアに対するスタイル */
+.AppHeader {
+  height: 10%;
+  background-color: darkorange;
+  color: wheat;
+  text-align: center;
+}
+
+.HeaderWrapper {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  padding: 7px 0px;
+}
+
+/* Mainエリアに対する全体的なスタイル */
+.MainWrapper {
+  width: 80%;
+  height: 80%;
+  margin: 50px auto;
+}
+
+/* Footerエリアに対するスタイル */
+.AppFooter {
+  height: 10%;
+  background-color: darkorange;
+  color: wheat;
+  text-align: center;
+}
+
+/* 参加者登録のSectionに対するスタイル */
+.RegisterArea {
+  display: flex;
+  gap: 25px;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* セクションタイトルの後に続くエリア */
+.SectionArea {
+  border: #d4d4d4 1px solid;
+  padding: 20px;
+}
+
+/* 参加者情報の表示エリア専用のスタイル */
+.ResultArea {
+  padding: 0px;
+}
+
+/* セクション・タイトル */
+.SectionTitle {
+  background-color: oldlace;
+  color: coral;
+  padding: 7px;
+  margin-top: 20px;
+  border: #d4d4d4 1px solid;
+  border-bottom: #d4d4d4 0px solid;
+}
+
+/* 入力フォーム関連の説明項目 */
+.Discription {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* 「部署を別にする」CheckBoxの説明文 */
+.AffiliDiffDiscript {
+  margin-left: 12px;
+}
+
+/* 参加者カードの説明文 */
+.CardDiscription {
+  margin-bottom: 20px;
+}
+
+/* Text入力フォームに対する基本スタイル */
+input[type="text"] {
+  padding: 7px;
+}
+
+input[type="number"] {
+  padding: 7px;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+  margin-left: 12px;
+}
+
+/* グループ分けの結果カードのスタイル */
+.RandomCard {
+  margin: 5px;
+  padding: 12px;
+  border: #d4d4d4 1px solid;
+  border-radius: 3cm;
+  background: #ff6b7f78;
+}
+
+/* グループ分け結果のグループ情報に対するスタイル */
+.Grouping {
+  margin-top: 8px;
+  padding: 12px;
+  padding-bottom: 20px;
+  border-bottom: #d4d4d4 1px solid;
+}
+
+.Grouping :last-child {
+  border-bottom: #d4d4d4 0px solid;
+}
+
+/* 追加・シャッフルボタンのスタイル Start */
+.Btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.Btn {
+  background: #eee;
+  border-radius: 3px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.Btn:hover {
+  background: #6bb6ff;
+  color: #FFF;
+}
+/* 追加・シャッフルボタンのスタイル End */
+
+
+/* 参加者情報・カード(Btn)のスタイル Start */
+
+/* 追加・シャッフルボタンのスタイル Start */
+.GroupCardBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.GroupCardBtn {
+  margin: 5px;
+  padding: 10px 25px;
+  background: #ffa36b2e;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 5ch;
+  transition: 0.2s ease-in-out;
+}
+
+.GroupCardBtn:hover {
+  background: orangered;
+  color: floralwhite;
+}
+
+/* 参加者情報・カード(Btn)のスタイル End */
+
+/* 「参加者情報を登録する」ボタン専用のスタイル Start */
+.StorageBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.StorageBtn {
+  padding: 10px 25px;
+  background: floralwhite;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 5ch;
+  transition: 0.3s ease-in-out;
+}
+
+.StorageBtn:hover {
+  background: red;
+  color: floralwhite;
+}
+/* 「参加者情報を登録する」ボタン専用のスタイル End */
