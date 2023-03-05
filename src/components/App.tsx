@@ -83,7 +83,7 @@ function App() {
   const [groupingNum, setGroupingNum] = useState<string>('2');
   const inputGroupingNum = (event: React.ChangeEvent<HTMLInputElement>)=>{
 
-    if (Number(event.target.value) <= 0) return;
+    if (Number(event.target.value) <= 1) return;
     setGroupingNum(event.target.value);
   };
 
